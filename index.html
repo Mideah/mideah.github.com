@@ -1,1 +1,54 @@
-save what i want
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> My Sample HTML Page</title>
+		<style>
+		h1 {
+			font-size: 40px;
+			text-decoration:overline;
+			text-indent:50px;
+			color: #3ab4c2;
+			border-bottom: 4px solid #3ab4c2;
+		}
+
+		p {
+			padding:10px;
+			background-color: papayaWhip;
+		}
+		.attention {
+			border: 1px solid green;
+		}
+		#user-name {
+			font-weight: bold;
+		}
+
+		</style>
+
+		<script type="text/javascript">
+			function replaceName () {
+				var myNewName = window.prompt('Pick a new name!');
+				document.getElementById('user-name').innerHTML = myNewName
+			}
+
+			document.onclick = replaceName;
+		</script>
+
+	</head>
+	<body>
+		<h1>Hello <em>World!</em></h1>
+
+		<p class="attention">My name is
+		 <span id="user-name"> Jessica</span>.</p>
+
+		<p>In my free time, I enjoy gaming, Railsbridge, walking, and shopping for things I won't actually buy.</p>
+
+		<a href = "http://google.com"target='blank'>Google</a>
+
+		<ol>
+			<li>This is a line </li><br/>
+			<li>This is a line</li>
+		</ol>	
+		<h1>Putting h1 at the bottom like a boss</h1>	
+			
+	</body>
+</html>
